@@ -1,0 +1,769 @@
+/*
+    1. default css
+    2. heading css
+    3. space gap css
+    4. menu css
+    5. banner css
+    6. about css
+    7. team css
+    8. services css
+    9. clients css
+    10. gullery css
+    11. testimonials css
+    12. form css
+    13. last css
+*/
+
+/*default css starts*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+.clr{
+    clear: both;
+}
+
+.full-wrapper{
+    width: 100%;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    
+}
+/*default css ends*/
+
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.heading h3::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width: 100px;
+    height: 3px;
+    background: #fdc277;
+    transform: translateX(-50%)
+}
+.heading h3::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    width: 65px;
+    height: 3px;
+    background: #fdc277;
+    transform: translateX(-50%)
+}
+.heading h3 span{
+    font-weight: 700;
+}
+
+.heading p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+    margin-top: 70px;
+    color: #6c6c6c;
+}
+/*heading css ends*/
+.mr-30{
+    margin-right: 30px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.mx-30{
+    margin: 0 30px;
+}
+.mx-15{
+    margin: 0 15px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.text-white{
+    color: #ffffff !important;
+}
+/*space gap css*/
+
+.menu-bg{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 999;
+}
+.menu-bg .menu .logo{
+    width: 210px;
+    float: left;
+}
+.menu-bg .menu .menu-list{
+    width: 960px;
+    float: left;
+}
+.menu-bg .menu .menu-list ul {
+    float: right;
+}
+.menu-bg .menu .menu-list ul li{
+    float: left;
+}
+.menu-bg .menu .menu-list ul li a{
+    text-transform: uppercase;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 35px;
+    position: relative;
+}
+.menu-bg .menu .menu-list ul li:last-child a{
+    padding-right: 0;
+}
+.menu-bg .menu .menu-list ul li a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: all linear 0.4s;
+}
+.menu-bg .menu .menu-list ul li a:hover::before{
+    width: 50%;
+}
+.menu-bg .menu .menu-list ul li a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    width: 0;
+    height: 3px;
+    background: #fcac45;
+    transition: all linear 0.4s;
+}
+.menu-bg .menu .menu-list ul li a:hover::after{
+    width: 50%;
+}
+/*menu css ends*/
+
+.banner-bg{
+    background: url(../images/banner.jpg) no-repeat center / cover; 
+    padding-top: 300px;
+    padding-bottom: 420px;
+    position: relative;
+    z-index: 1;
+}
+.banner-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.banner-bg .banner{
+    text-align: center;
+}
+.banner-bg .banner h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    font-weight: 300;
+    color: #999999;
+    text-transform: uppercase;
+}
+.banner-bg .banner h1 span{
+    color: #fcac45;
+    font-weight: 700;
+}
+.banner-bg .banner p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+.banner-bg .banner p span{
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+}
+.banner-bg .banner ul{
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+    transform: translateX(-50%)
+}
+.banner-bg .banner ul li{
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+    cursor: pointer;
+}
+.banner-bg .banner ul li.active{
+    background: #fcac45;
+}
+/*banner css ends*/
+.about-bg{
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+.about-bg .about .about-mac{
+    width: 570px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.about-bg .about .about-mac .shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.about-bg .about .about-text{
+    width: 570px;
+    float: left;
+    padding-left: 98px;
+    box-sizing: border-box;
+}
+.about-bg .about .about-text h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #636363;
+    text-transform: uppercase;
+}
+.about-bg .about .about-text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 34px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+.about-bg .about .about-text h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    width: 100px;
+    height: 3px;
+    background: #fdc277;
+}
+.about-bg .about .about-text h3 span{
+    font-weight: 700px;
+}
+.about-bg .about .about-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c6c6c;
+    line-height: 25px;
+    margin-top: 40px;
+}
+.about-bg .about .about-text ul{
+    margin-top: 48px;
+}
+.about-bg .about .about-text ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+}
+.about-bg .about .about-text ul li span{
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.about-bg .about .about-text ul li i{
+    color: #5a5a5a;
+}
+.about-bg .about .about-text a{
+    border: 3px solid #222222;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5a5a5a;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.about-bg .about .about-text a i{
+    margin-right: 10px;
+}
+/*about css ends*/
+
+.team-bg{
+    background: #070707;
+    padding-top: 100px;
+    padding-bottom: 168px;
+}
+.team-bg .team{
+    position: relative;
+}
+.team-bg .team .team-member{
+    width: 262px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 145px;
+    float: left;
+    text-transform: capitalize;
+}
+.team-bg .team .team-member h4{
+    font-weight: 700;
+    font-size: 20px;
+}
+.team-bg .team .team-member h6{
+    font-weight: 400;
+    font-size: 16px;
+}
+.team-bg .team .team-member p{
+    font-weight: 400;
+    font-size: 14px;
+}
+.team-bg .team ul{
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    
+}
+.team-bg .team ul li{
+    width: 9px;
+    height: 9px;
+    margin-right: 15px;
+    background: #ffffff;
+    float: left;
+    cursor: pointer;
+}
+.team-bg .team ul li.active{
+    background: #ffba00;
+}
+/*team css ends*/
+
+.services-bg .services{
+    text-align: center;
+}
+.services-bg .services h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.services-bg .services h3::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    width: 100px;
+    height: 3px;
+    background: #fdc277;
+    transform: translateX(-50%)
+}
+.services-bg .services h3::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    width: 65px;
+    height: 3px;
+    background: #fdc277;
+    transform: translateX(-50%)
+}
+.services-bg .services h3 span{
+    font-weight: 700;
+}
+
+.services-bg .services > p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 24px;
+    margin-top: 70px;
+    color: #6c6c6c;
+}
+.services-bg .services .icon{
+    width: 270px;
+    float: left;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.services-bg .services .icon i {
+    width: 115px;
+    height: 115px;
+    font-size: 40px;
+    line-height: 115px;
+    border-radius: 50%;
+    background: #fff;
+    border: 6px solid #fcac45;
+}
+.services-bg .services .icon h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #222222;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.services-bg .services .icon p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #222222;
+    text-transform: capitalize;
+    padding-top: 20px;
+}
+/*services cee ends*/
+
+.clients-bg{
+    background: url(../images/clients.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.clients-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.clients-bg .clients h3{
+    color: #fff; !importent
+}
+.clients-bg .clients ul{
+    margin: 0 205px;
+    margin-top: 150px;
+}
+.clients-bg .clients ul li{
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 15px;
+}
+.clients-bg .clients ul li:first-child{
+    font-weight: 700;   
+}
+.clients-bg .clients ul li:last-child{
+    font-weight: 700;   
+}
+.clients-bg .clients ul li:nth-child(2n){
+    font-weight: 300;
+    font-style: italic;
+}
+.clients-bg .clients ul li:nth-child(3){
+    font-weight: 300;
+    font-style: italic;
+}
+/*clients css ends*/
+
+.gullery-bg{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+.gullery-bg .gullery .filter-menu{
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 115px;
+}
+.gullery-bg .gullery .filter-menu span{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+}
+.gullery-bg .gullery .filter-menu ul{
+    float: right;
+}
+.gullery-bg .gullery .filter-menu ul li{
+    float: left;
+}
+.gullery-bg .gullery .filter-menu ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-left: 1px solid #5a5a5a;
+    padding: 15px;
+    color: #6c6c6c;
+    transition: all linear 0.3s;
+}
+.gullery-bg .gullery .filter-menu ul li a:hover{
+    color: #000;
+}
+.gullery-bg .gullery .filter-menu ul li:last-child a{
+    padding-right: 0;
+}
+.gullery-bg .gullery .filter-menu ul li:first-child a{
+    border-left: 1px solid transparent;
+/*    color: #000;*/
+}
+
+.gullery-bg .gullery .gullery-item{
+    width: 262px;
+    float: left;
+    position: relative;
+}
+.gullery-bg .gullery .gullery-item img{
+    width: 100%;
+}
+.gullery-bg .gullery .gullery-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-bottom: 40px;
+    transition: all linear 0.4s;
+    opacity: -1;
+}
+.gullery-bg .gullery .gullery-item .overlay:hover{
+    content: '';
+    opacity: 1;
+    background: #000000;
+    width: 100%;
+}
+.gullery-bg .gullery .gullery-item .overlay h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+    padding-top: 67px;
+}
+.gullery-bg .gullery .gullery-item .overlay p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #b2b2b2;
+    padding-bottom: 30px;
+}
+.gullery-bg .gullery .gullery-item .overlay i{
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #eda343;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid #eda343;
+}
+/*gullery css ends*/
+
+.testimonials-bg{
+    background: url(../images/testimonials.jpg) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+    padding-bottom: 175px;
+}
+.testimonials-bg::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.testimonials-bg .testimonials{
+    text-align: center;
+    position: relative;
+}
+.testimonials-bg .testimonials .heading h3{
+    color: #fff; !importent
+}
+.testimonials-bg .testimonials .heading > p{
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    color: #e7e7e7;
+}
+.testimonials-bg .testimonials .name p span{
+    font-weight: 600;
+}
+.testimonials-bg .testimonials .name p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #b2b2b2;
+    padding-top: 52px;
+    padding-bottom: 65px;
+}
+
+.testimonials-bg .testimonials ul{
+    position: absolute;
+    left: 50%;
+    bottom: -60px;
+    transform: translateX(-50%);
+    
+}
+.testimonials-bg .testimonials ul li{
+    width: 9px;
+    height: 9px;
+    margin-right: 15px;
+    background: #ffffff;
+    float: left;
+    cursor: pointer;
+}
+.testimonials-bg .testimonials ul li.active{
+    background: #ffba00;
+}
+/*testimonials css ends*/
+
+.form-bg .form .heading p{
+    padding: 0 210px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+    color: #6c6c6c;
+}
+.form-bg .form .form-item form{
+    padding: 0 210px;
+}
+.form-bg .form .form-item form label input{
+    width: 360px;
+    height: 40px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+.form-bg .form .form-item form label input::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #636363;
+}
+.form-bg .form .form-item form label input.margin{
+    margin-right: 20px;
+}
+.form-bg .form .form-item form label textarea{
+    width: 750px;
+    height: 160px;
+    resize: none;
+    margin-bottom: 30px;
+}
+.form-bg .form .form-item form label textarea::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #636363;
+}
+.form-bg .form .form-item form label button{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    background: #fcac45;
+    width: 165px;
+    height: 35px;
+    border: none;
+    box-shadow: 0px 10px 2px 0px #d0d0d0;
+    margin-bottom: 110px;
+    float: right;
+}
+/*form css ends*/
+.last-bg{
+    background: #171717;
+}
+.last-bg .last p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    float: left;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+.last-bg .last p span{
+    font-weight: 700;
+}
+
+.last-bg .last ul{
+    float: right;
+    padding-top: 30px;
+}
+.last-bg .last ul li{
+    float: left;
+    
+}
+.last-bg .last ul li a i{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    border: 2px solid #c9c9c9;
+    text-align: center;
+    line-height: 30px;
+    font-size: 17px;
+    color: #c9c9c9;
+    margin-left: 15px;
+}
+
+/*last css ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
