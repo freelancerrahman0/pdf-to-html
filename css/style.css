@@ -674,6 +674,8 @@ a{
     height: 40px;
     margin-top: 120px;
     margin-bottom: 50px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 .form-bg .form .form-item form label input::placeholder{
     font-family: 'Open Sans', sans-serif;
@@ -690,6 +692,8 @@ a{
     height: 160px;
     resize: none;
     margin-bottom: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 .form-bg .form .form-item form label textarea::placeholder{
     font-family: 'Open Sans', sans-serif;
